@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title color="danger">Life<ion-icon name="pulse" color="danger"></ion-icon>line</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showHelpModal()">
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content map-page home">
+    <div class="banner-sec">
+         <button ion-button class="set"><ion-icon name="settings"></ion-icon></button>
+        <img src="assets/img/p2.png"/>
+        <button ion-button class="alrt"><ion-icon name="alert"></ion-icon></button>
+        <h1>Jaclyn Mathew</h1>
+    </div> 
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="hlp">
+                <button ion-button small color="danger" style="width: 100%;height: 70px; " (click)="showHelpModal()">
+                  <div>
+                    <ion-icon name="locate" style="font-size: 2.5em;margin-bottom: 5px;" color="light"></ion-icon> <br/>
+                    <label>Find help</label>
+                  </div>
+                </button>
+              </div>
+          </ion-col>
+          <ion-col>
+            <div class="pol">
+              <button ion-button small  color="secondary" style="width: 100%;height: 70px;" (click)="takeVideo()">
+               <div>
+                  <ion-icon name="ribbon" style="font-size: 2.5em;margin-bottom: 5px;" color="light"></ion-icon> <br/>
+                  <label>Police</label>
+              </div>
+              </button>
+            </div>  
+          </ion-col>
+          <ion-col>
+           <div class="med">
+              <button ion-button small color="favorite" style="width: 100%;height: 70px;" (click)="goToProfilePage()">
+                <div>
+                  <ion-icon name="medkit" style="font-size: 2.5em;margin-bottom: 5px;" color="light"></ion-icon> <br/>
+                  <label>Medical</label>
+              </div>
+              </button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-card>
+        <ion-item>
+          <span item-left>10min to SafeHouse(2.6Km)</span>
+          <ion-icon name="locate" color="danger" item-right large ></ion-icon>
+        </ion-item>
+
+      </ion-card>
+
+      <it-map (onMapReady)="onMapReady();"></it-map>
+      
+      <ion-card>
+        <ion-item>
+          <ion-icon name="pin" color="danger" item-left large ></ion-icon>
+          <h2>You are at</h2>
+          <p>Chandni Chowk St, Bowbazar,Kolkata, WB 700072</p>
+        </ion-item>
+      </ion-card>
+
+    <div class= "main-footer">
+        <p>Powered By:</p>
+        <p>Strategic Solutions &amp; Support Pvt. Ltd</p>
+    </div> 
+</ion-content>

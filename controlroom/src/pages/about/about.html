@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cases Inbox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item *ngFor="let case of casesFiled" (click)="goToEmailPage(case)">
+      <div>
+        <ion-icon name="mail"></ion-icon>
+        <span>{{case.victim}}</span>
+      </div>
+      <p>
+        <span class="email-text">{{case.help_text}}</span>
+        <span class="item-note email-text">{{case.time_of_incident}}</span>
+      </p>
+    </ion-item>
+
+  </ion-list>
+  <ion-refresher (ionRefresh)="refreshPage($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+</ion-content>

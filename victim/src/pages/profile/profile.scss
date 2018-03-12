@@ -1,0 +1,89 @@
+.main-content {
+  background: #323232;
+}
+$fab-content-margin: 20px;
+
+.victims-name h2{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.victims-name p{
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+.victims-details .image{
+    width: 30%;
+    float: left;
+}
+.about-info{
+    float: left;
+}
+.about-header {
+  width: 10%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.about-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.about-info p {
+  color: white;
+  margin-top: 0.3em;;
+  margin-bottom: 0.3em;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.about-info h4 {
+  text-align: left;
+}
+
+.about-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .about-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .about-info {
+  text-align: center;
+}
+
+.ios .about-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
+
+.banner-header {
+  background: #4b7fa2;
+  color: white;
+  text-align: center;
+}
+
+.banner-header img {
+  max-width: 70%;
+}
+
+.banner-header .about-info ion-icon {
+  color: color($colors, secondary);
+  width: 15px;
+}
+
+.main-content .card {
+  margin: 0px;
+  width: 100%;
+}

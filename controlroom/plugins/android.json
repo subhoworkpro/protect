@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera-preview": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-shake": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-nativeaudio": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-fcm": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "com-sarriaroman-photoviewer": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.damiendev.taxiapp"
+        }
+    }
+}

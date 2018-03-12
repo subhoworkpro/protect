@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-shake@0.5.4",
+        "scope": null,
+        "escapedName": "cordova-plugin-shake",
+        "name": "cordova-plugin-shake",
+        "rawSpec": "0.5.4",
+        "spec": "0.5.4",
+        "type": "version"
+      },
+      "C:\\Users\\Rahul\\projects\\demo\\ionic2-taxi-app\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-shake@0.5.4",
+  "_id": "cordova-plugin-shake@0.5.4",
+  "_inCache": true,
+  "_location": "/cordova-plugin-shake",
+  "_nodeVersion": "5.4.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-shake-0.5.4.tgz_1461228167047_0.7907127614598721"
+  },
+  "_npmUser": {
+    "name": "leecrossley",
+    "email": "leee@hotmail.co.uk"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-shake@0.5.4",
+    "scope": null,
+    "escapedName": "cordova-plugin-shake",
+    "name": "cordova-plugin-shake",
+    "rawSpec": "0.5.4",
+    "spec": "0.5.4",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-shake/-/cordova-plugin-shake-0.5.4.tgz",
+  "_shasum": "e9cab00b1764f0d7a200e94e73ede895fe03f9b8",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-shake@0.5.4",
+  "_where": "C:\\Users\\Rahul\\projects\\demo\\ionic2-taxi-app\\node_modules",
+  "author": {
+    "name": "Lee Crossley",
+    "email": "leee@hotmail.co.uk",
+    "url": "http://ilee.co.uk/"
+  },
+  "bugs": {
+    "url": "https://github.com/leecrossley/cordova-plugin-shake-detection/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-shake",
+    "platforms": []
+  },
+  "dependencies": {},
+  "description": "Cordova Plugin to detect when a physical device performs a shake gesture.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "e9cab00b1764f0d7a200e94e73ede895fe03f9b8",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-shake/-/cordova-plugin-shake-0.5.4.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.0.0"
+    }
+  ],
+  "gitHead": "5131b760ce1fe2e049830eaa0da080d694e3e10e",
+  "homepage": "https://github.com/leecrossley/cordova-plugin-shake-detection#readme",
+  "keywords": [
+    "cordova",
+    "shake",
+    "gesture",
+    "accelerometer",
+    "acceleration",
+    "detection",
+    "ecosystem:cordova"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "leecrossley",
+      "email": "leee@hotmail.co.uk"
+    }
+  ],
+  "name": "cordova-plugin-shake",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecrossley/cordova-plugin-shake-detection.git"
+  },
+  "scripts": {},
+  "version": "0.5.4"
+}

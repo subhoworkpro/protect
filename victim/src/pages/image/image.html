@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Distress Detected</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="sample-modal-page">
+  <div class="modal-header">
+    <h2><b>life</b><ion-icon name="pulse" color="danger"></ion-icon><b>Line</b></h2>
+    <p>has detected a situation of distress.</p>
+  </div>
+  <!-- <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions" [legend]="chartLegend"
+    [chartType]="chartType"></canvas> -->
+  <div style="padding-left: 15%;padding-right: 15%;"><canvas baseChart [datasets]="chartData"  [options]="chartOptions" [chartType]="chartType"></canvas></div>
+  <div class="modal-content">
+    <h2><b>{{loadProgress}}</b></h2>
+    <p>seconds remaining</p>
+  </div>
+  <div class="modal-footer">
+    <p>Your location, medical details, crime/outside phots and videos will be sent to lal bazaar control room unless you confirm that you are OK and do not require assistance.</p>
+  </div>
+  <!-- <progress-bar [progress]="loadProgress"></progress-bar> -->
+  <button (click)="dismiss({})" style="color:white;" ion-button block><b>I M OK</b></button>
+</ion-content>

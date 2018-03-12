@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="navigate"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+ <!--  <div class="banner-sec">
+      <img src="assets/img/p2.png"/>
+      <h1>Hi Sara Frey</h1>
+  </div>  -->
+  <ion-list>
+    <ion-card *ngFor="let chart of charts">
+      <ion-card-header>
+        {{chart.title}}
+      </ion-card-header>
+      <ion-card-content>
+        <canvas baseChart [datasets]="chart.datasets" [labels]="chart.labels" [options]="chartOptions" [legend]="chartLegend"
+      [chartType]="chart.type"></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+<ion-grid text-center>
+    <ion-row wrap>
+      <ion-col width-25>Too</ion-col>
+      <ion-col width-25>Many</ion-col>
+      <ion-col width-25>Columns</ion-col>
+      <ion-col width-25>For</ion-col>
+      
+      <ion-col width-25>One</ion-col>
+      <ion-col width-25>Row</ion-col>
+      <ion-col width-25>Not</ion-col>
+      <ion-col width-25>A</ion-col>
+      <ion-col width-25>Problem!</ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-fab middle right edge>
+    <button ion-fab (click) = "goToInboxPage()"><ion-icon name="search"></ion-icon></button>
+  </ion-fab>
+</ion-content>

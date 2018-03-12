@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "637167652598",
+    "firebase_url": "https://protect-ee184.firebaseio.com",
+    "project_id": "protect-ee184",
+    "storage_bucket": "protect-ee184.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637167652598:android:a4e0bdc6f889a33e",
+        "android_client_info": {
+          "package_name": "com.damiendev.taxiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637167652598-3oguv6t6v4rhink70sgtvdpu3f11116f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfHayVdVBTjTaGYWAGAcpKU64gliWEEAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Case ID: {{case.id}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item >
+      <div>
+        <ion-icon name="mail"></ion-icon>
+        <span>Case ID: {{case.id}}</span>
+        <span>{{case.victim}}</span>
+      </div>
+      <p>
+        <span class="email-text">{{case.help_text}}</span>
+        <span class="item-note email-text">{{case.time_of_incident}}</span>
+      </p>
+    </ion-item>
+
+    <ion-item>
+            <div class="date-section">
+                <p>28-05-2017</p>
+            </div>
+            <div class="patient-photo">
+                <span><img src="assets/img/p2.png"/></span>
+            </div>
+            <div class="patient-txt">
+                <span>Case ID: {{case.id}}</span>
+                <p>Urgent!! {{case.help_text}}</p>
+            </div>
+        </ion-item>
+      <ion-item>
+            <div class="patient-location">
+                <img src="assets/img/map-image.jpg" alt="patient's image">
+            </div>
+    </ion-item>   
+   <ion-item>  
+       <p>
+        <span class="victim-img">Victim's snapshots</span>
+      </p>
+     <ion-grid>
+        <ion-row>
+          <ion-col class="vic-snap">
+              <img *ngIf = "case.media.images[0]" src="{{case.media.images[0].filename}}" alt="your image" (click) = "showPhoto(case.media.images[0].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[1]" src="{{case.media.images[1].filename}}" alt="your image" (click) = "showPhoto(case.media.images[1].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[2]" src="{{case.media.images[2].filename}}" alt="your image" (click) = "showPhoto(case.media.images[2].filename)">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="vic-snap">
+              <img *ngIf = "case.media.images[3]" src="{{case.media.images[3].filename}}" alt="your image" (click) = "showPhoto(case.media.images[3].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[4]" src="{{case.media.images[4].filename}}" alt="your image" (click) = "showPhoto(case.media.images[4].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[5]" src="{{case.media.images[5].filename}}" alt="your image" (click) = "showPhoto(case.media.images[5].filename)">
+          </ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col class="vic-snap">
+              <img *ngIf = "case.media.images[6]" src="{{case.media.images[6].filename}}" alt="your image" (click) = "showPhoto(case.media.images[6].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[7]" src="{{case.media.images[7].filename}}" alt="your image" (click) = "showPhoto(case.media.images[7].filename)">
+          </ion-col>
+          <ion-col class="vic-snap">
+            <img *ngIf = "case.media.images[8]" src="{{case.media.images[8].filename}}" alt="your image" (click) = "showPhoto(case.media.images[8].filename)">
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        <span class="victim-img">Video Footage</span>
+      </p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+             <a *ngIf = "case.media.videos" href="{{case.media.videos}}"><img src="assets/img/livestream-placeholder.png" alt="your image"></a>
+           </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+        <div class="bio-txt">
+            <p>Lorem Ipsum is not simply random text.</p>
+            <h1  *ngIf = "case.status != 'pending' && case.status != 'assigned'">{{case.status}}</h1>
+        </div>
+    </ion-item>
+    <ion-item>
+        <!-- For Control Room-->
+        <button ion-button icon-left  (click) = "cancel()">
+            Cancel
+        </button>
+        <button ion-button icon-right (click) = "goToSearchPage()">
+            Proceed
+        </button>  
+
+        <!-- For Officer -->
+        <!-- <button *ngIf = "case.status == 'pending' || case.status == 'assigned'" ion-button icon-left (click) = "fileGD(case)">
+            GENERAL DIARY
+        </button>
+        <button *ngIf = "case.status == 'pending' || case.status == 'assigned'" ion-button icon-right (click) = "fileFIR(case)">
+            Register FIR
+        </button>   -->
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right middle>
+    <button ion-fab color="primary" (click) = "goToFinderPage()"><ion-icon name="navigate"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

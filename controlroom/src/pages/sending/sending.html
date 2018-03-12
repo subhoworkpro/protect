@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Uploading files..</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="sample-modal-page">
+  <div class="modal-header">
+    <h2><b>life</b><ion-icon name="pulse" color="danger"></ion-icon><b>Line</b></h2>
+    <p>Your case has been sent to LalBazaar Control Room.</p>
+  </div>
+  <!-- <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions" [legend]="chartLegend"
+    [chartType]="chartType"></canvas> -->
+ <!--  <div style="padding-left: 15%;padding-right: 15%;"><canvas baseChart [datasets]="chartData"  [options]="chartOptions" [chartType]="chartType"></canvas></div>
+  <div class="modal-content">
+    <h2><b>{{loadProgress}}</b></h2>
+    <p>seconds remaining</p>
+  </div> -->
+  <div class="modal-content">
+    <p>{{statusTitle}}</p>
+  </div>
+  <progress-bar [progress]="loadProgress"></progress-bar>
+  <ion-grid>
+    <ion-row *ngFor="let row of grid">
+      <ion-col width-25 *ngFor="let file_uri of row">
+        <img [src]="file_uri">
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+  
+  <div class="modal-footer">
+    <p>Your location, medical details, crime/outside phots and videos is being sent to lal bazaar control room. It will be stored in police record for further processing.</p>
+  </div>
+  <!-- <button (click)="dismiss({})" style="color:white;" ion-button block><b>I M OK</b></button> -->
+</ion-content>

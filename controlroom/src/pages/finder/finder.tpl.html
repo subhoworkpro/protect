@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Locate</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content scroll="false" class="map-page">
+  <it-map (onMapReady)="onMapReady();" (onMapIdle)="onMapIdle()" (onDragStart)="onDragStart()"></it-map>
+  <ion-card style="margin: 0px;width:100%;height: 15%;">
+    <ion-item>
+      <ion-icon name="ribbon" item-left large ></ion-icon>
+      <h2>Mr. Pranab Sen</h2>
+      <p>is reaching the spot in 18 min.</p>
+    </ion-item>
+  </ion-card>
+  <ion-fab right top>
+    <button ion-fab (click)="locate()">
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-fab left bottom>
+    <button ion-fab color="primary" ><ion-icon name="navigate"></ion-icon></button>
+  </ion-fab>
+  <ion-fab right bottom>
+    <button ion-fab color="primary" ><ion-icon name="ios-call"></ion-icon></button>
+  </ion-fab>
+</ion-content>

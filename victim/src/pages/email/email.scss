@@ -1,0 +1,109 @@
+.about-header {
+  background-color: #434954;
+  padding: 16px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+
+.about-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin-left: -15px;
+  padding: 25px 0 20px 0;
+}
+
+.about-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.about-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .about-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .about-info {
+  text-align: center;
+}
+
+.ios .about-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+
+
+body {
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}
+
+.email-text {
+  font-size: smaller !important;
+  color: grey !important;
+}
+
+.email-body-text {
+  font-size: smaller !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.date-section{
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-weight: 300;
+}
+.patient-photo{
+    width: 15%;
+    
+    display: block;
+}
+.patient-txt{
+    text-align: left;
+}
+.patient-txt p{
+    font-size: 10px;
+}
+.patient-location{
+}
+.victim-img{
+    font-size: 14px;
+    color: black;
+}
+.bio a{
+    color: blueviolet;
+    text-decoration: none;
+}
+.bio-txt p{
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    width: 30%;
+}
+
+ .vic-snap > img{
+      width: 100%;
+      max-height: 120px;
+ }

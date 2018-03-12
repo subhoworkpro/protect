@@ -1,0 +1,169 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showHelpModal()">
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content">
+
+    <div class="banner-header">
+        <ion-row>
+          <ion-col>
+            <img src="assets/img/p2.png"/>
+            <p><b>Jaclyn Mathew</b></p>
+          </ion-col>
+          <ion-col col-7>
+            <div padding class="about-info">
+                <p><ion-icon name="woman" color="light"></ion-icon>59 years</p>
+                <p><ion-icon name="book" color="light"></ion-icon>ReportID: WS232210812</p>
+                <p><ion-icon name="heart" color="light"></ion-icon>Extreme Blood Pressure</p>
+                <p><ion-icon name="list-box" color="light"></ion-icon>GD: 23245</p>
+                <hr>
+                <p><ion-icon name="person" color="light"></ion-icon>Family (David Mathew)</p>
+                <p><ion-icon name="call" color="light"></ion-icon>+91 9898989898</p>
+             </div>
+          </ion-col>
+        </ion-row>  
+    </div>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                  <ion-card-content>
+                    <canvas baseChart [datasets]="chartData"  [labels]="chartLabels" [options]="chartOptions" [chartType]="chartType"></canvas>
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+          <ion-col>
+              <button ion-button large color="danger" style="width: 100%;height: 150px;">
+                <div>
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon name="ios-thermometer-outline" style="font-size: 4em;" color="light"></ion-icon> <br/>
+                    </ion-col>
+                    <ion-col>
+                      <h1 style="font-size: 3.2rem;font-weight: bold;">98.3</h1> <br/>
+                    </ion-col>
+                  </ion-row>
+                  <label>Body Temperature</label>
+                  <p></p>
+              </div>
+              </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <button ion-button large  color="secondary" style="width: 100%;height: 150px;">
+               <div>
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon name="ios-pulse" style="font-size: 3em;" color="light"></ion-icon> <br/>
+                    </ion-col>
+                    <ion-col>
+                      <h1 style="font-size: 3.2rem;font-weight: bold;">73</h1> <br/>
+                    </ion-col>
+                  </ion-row>
+                  <label>Pulse rate</label>
+              </div>
+              </button>
+          </ion-col>
+        </ion-row>
+         <ion-row>
+          <ion-col>
+              <button ion-button large color="favorite" style="width: 100%;height: 150px;">
+                <div>
+                  <ion-row>
+                    <ion-col>
+                      <ion-icon name="body" style="font-size: 4em;" color="light"></ion-icon> <br/>
+                    </ion-col>
+                    <ion-col>
+                      <h1 style="font-size: 3.2rem;font-weight: bold;">120/80</h1> <br/>
+                    </ion-col>
+                  </ion-row>
+                  <label>Blood Pressure</label>
+                  <p></p>
+              </div>
+              </button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+    <div class= "main-footer">
+        <p>Powered By:</p>
+        <p>Strategic Solutions &amp; Support Pvt. Ltd</p>
+    </div> 
+
+    </ion-content>
+
+
+<!-- <ion-content class="main-content">
+    <ion-item>
+        <div class="victims-name">
+            <h2>Jaclyn Mathew needs help right now.</h2>
+            <p>Please call +91 9898 989 898</p>
+        </div>
+    </ion-item>
+    <ion-item>
+        <div class="victims-details clearfix">
+            <div class="image"><img src="assets/img/p2.png"></div>
+            <div padding class="about-info">
+                <h4><b>Jaclyn Mathew</b></h4>
+                <p>59 years</p>
+                <p><b>Report ID: WB-WS232210812</b></p>
+                <p><b>GD: 23245</b></p>
+             </div>
+        </div>
+    </ion-item>
+    <ion-item>
+        <div class="nav section">
+            <button ion-button>Navigate to her secure zone</button>
+            <button ion-button>ID Proof</button>
+        </div>
+    </ion-item>
+  <ion-card>
+    <ion-item>
+      <h2><b>Emergency Contact</b></h2>
+      <p>David Mathew</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-left>+91 9999988888</span>
+      <button ion-button icon-left clear item-right large>
+        <ion-icon name="call"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-card>
+  
+  <ion-card>
+
+    <ion-item>
+      <button (click) = "showModal()" ion-button block><b>View Medical History &amp; Records</b></button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+
+  <ion-item>
+      <h2><b>Medi Claim</b></h2>
+  </ion-item>
+  <ion-item>
+    <span>STANDARD CHARTERED HEALTH</span>
+      <button ion-button icon-left clear item-right large>
+        <ion-icon name="medkit"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-card>
+  <ion-fab middle right edge>
+    <button ion-fab (click) = "takeVideo()"><ion-icon name="medical"></ion-icon></button>
+  </ion-fab>
+
+</ion-content> -->
