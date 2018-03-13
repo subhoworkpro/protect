@@ -1,0 +1,8 @@
+Steps:
+
+1. Install git client from this url (https://git-scm.com/download/win)
+2. Open git client and clone the repository using this command: git clone https://github.com/subhoworkpro/protect.git
+3. Install node and npm  (http://blog.teamtreehouse.com/install-node-js-npm-windows)
+4. Opem command prompt - run npm install
+5. Install Ionic CLI https://ionicframework.com/docs/intro/installation/
+6. Start ionic server
